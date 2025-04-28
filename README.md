@@ -1,45 +1,53 @@
-Captcha Generator
+Captcha Generator 🔒🔢
 
-The Captcha Generator project is a fun and educational web development project where I built a simple CAPTCHA system. The system generates a random sequence of characters (letters and numbers) that the user needs to input correctly in an input field to verify the CAPTCHA. If the user correctly inputs the characters, a success message appears, otherwise, the user is prompted to try again.
+The Captcha Generator project is a fun and educational web development task where I built a simple CAPTCHA system. The system generates a random sequence of characters (letters and numbers) that the user needs to input correctly to verify the CAPTCHA.
+
+If the user enters it correctly, a success message appears ✅. If not, the user is prompted to try again 🔁.
 
 This project helped me understand basic CAPTCHA functionality and enhanced my skills in front-end web development.
 
-Features:
-- Random CAPTCHA Generation: Generates random CAPTCHA codes with letters and numbers.
-- User-friendly Interface: Simple and responsive design for a smooth user experience.
-- CAPTCHA Verification: Input field to verify the CAPTCHA code entered by the user.
-- Stylish Button: Stylish button with a hover effect for better user interaction.
-- Error Handling: Displays an error message for incorrect CAPTCHA input and prompts to try again.
+Features ✨
+Random CAPTCHA Generation: Generates random codes with letters and numbers.
 
-Technologies Used:
-- HTML
-- CSS
-- JavaScript
+User-friendly Interface: Simple and responsive design for a smooth user experience.
 
-How to Use:
-1. Clone the repository:
-   
-   git clone https://github.com/Vishwanathangit/Captcha-Generator.git
-   
-2. Navigate to the project directory:
-   
-   cd Captcha-Generator
-   
-3. Open the index.html file in your browser.
+CAPTCHA Verification: Input field to verify user input.
 
-4. Interact with the CAPTCHA:
-   - The CAPTCHA will be displayed at the top of the page.
-   - Type the CAPTCHA shown into the input field.
-   - Click the "Verify" button to check if the input matches the CAPTCHA.
-   - If correct, a success message will appear. If not, you will be prompted to try again.
+Stylish Button: Button with hover effects for better interaction.
 
- Installation:
-No special installation is needed for this project.
+Error Handling: Displays error messages for wrong CAPTCHA attempts.
 
-1. Clone the repository:
- 
-   git clone https://github.com/Vishwanathangit/Captcha-Generator.git
-  
-3. Open the index.html file in your browser to start using the CAPTCHA generator.
+Technologies Used 🛠️
+HTML
 
-Live Site : 
+CSS
+
+JavaScript
+
+How to Use 🚀
+Clone the repository:
+git clone https://github.com/Vishwanathangit/Captcha-Generator.git
+
+Navigate to the project directory:
+cd Captcha-Generator
+
+Open the index.html file in your browser.
+
+Interact with the CAPTCHA:
+
+The CAPTCHA will be displayed on the page.
+
+Enter the displayed code in the input field.
+
+Click the "Verify" button.
+
+See the success or error message based on your input.
+
+Installation 🧩
+No special installation is required.
+
+Simply clone the repository and open the index.html file in your browser.
+
+Live Demo 🌐
+Check it out here:
+👉 Live Site : https://vishwanathangit.github.io/Captcha-Generator/
