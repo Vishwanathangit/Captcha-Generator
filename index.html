@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="captcha"></h1>
+        <input id="input" type="text">
+        <button id="btn" type="submit">Verify</button>
+    </div>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 320px;
+        }
+
+        input {
+            width: 90%;
+            height: 35px;
+            margin-top: 20px;
+            padding: 5px 10px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            border-color: green;
+        }
+
+        #btn {
+            margin-top: 20px;
+            background-color: #00b894;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        #btn:hover {
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        var btn = document.getElementById("btn")
+        var captcha = document.getElementById("captcha")
+        var input = document.getElementById("input")
+        var randomchar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+        var generated = ""
+        for (i = 0; i < 5; i++) {
+            generated += randomchar.charAt(Math.floor(Math.random() * randomchar.length))
+        }
+        captcha.innerHTML = generated
+        btn.addEventListener("click", function () {
+            if (input.value == "") {
+                alert("Please Enter Captcha")
+            }
+            else if (captcha.textContent == input.value) {
+                alert("Captcha Verified Successfully")
+            }
+            else {
+                alert("Captcha Verification Failed, Please try again")
+            }
+        })
+    </script>
+</body>
+
+</html>
